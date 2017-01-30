@@ -3,8 +3,8 @@ console.log("hello console!");
 
 // this object will be used as the single argument passed into the tree function
 var treeObject = {
-	height: undefined,
-	whichChar: undefined
+	height: 0,
+	whichChar: 0
 };
 
 // Grow Tree button click event triggers the function
@@ -17,7 +17,9 @@ function treeFunction(treeObject){
 treeObject.height = document.getElementById("getHeight").value;
 // console.log("treeObject.height", treeObject.height);
 treeObject.whichChar = document.getElementById("whichChar").value;
-console.log("whichChar", treeObject.whichChar);
+
+
+// console.log("whichChar", treeObject.whichChar);
 var spaceLoopMath = treeObject.height - 1;
 var charLoopMath = 1;
 
@@ -31,7 +33,7 @@ console.log(treeGrow);
 
 spaceLoopMath -= 1;
 charLoopMath += 2;
-}
+};
 
 };
 
